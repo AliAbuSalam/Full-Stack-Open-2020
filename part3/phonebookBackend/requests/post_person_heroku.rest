@@ -1,0 +1,7 @@
+post https://salty-cliffs-61396.herokuapp.com/api/persons
+Content-Type:application/json
+
+{
+  "name": "Ali",
+  "number": "021-456654"
+}
