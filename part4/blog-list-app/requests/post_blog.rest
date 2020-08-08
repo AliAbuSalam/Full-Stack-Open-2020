@@ -1,0 +1,10 @@
+post http://localhost:3003/api/blogs
+Content-Type: application/json
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImFzcyIsImlkIjoiNWYyNTk1MTNkN2E2ZTRkZmE3ZjE3MzM3IiwiaWF0IjoxNTk2NDU0Njg3fQ.IfKKV_6DdV2Lf0JCmOTbkbBqmBVE0NGkAIzLCBgp7mU
+
+{
+  "title": "Hi, does the middleware tokenExtractor works? It does apparently",
+  "author": "Roen",
+  "url": "http://BigNavi.com",
+  "likes": "111"
+}
