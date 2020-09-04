@@ -1,3 +1,5 @@
+const morgan = require('morgan');
+
 const errorHandler = (error, request, response, next) => {
   if(error.name === 'ValidationError'){
     response.status(400).send({ error: error.message });
@@ -23,7 +25,19 @@ const tokenExtractor = (request, response, next) => {
   next();
 };
 
+morgan.token('logger', (tokens, req, res) => {
+  return [
+    '\n-------------\n',
+    tokens.method(req, res),
+    tokens.url(req, res),
+    tokens.status(req, res),
+    JSON.stringify(req.body),
+    '\n-------------\n'
+  ].join(' ');
+});
+
 module.exports = {
   errorHandler,
-  tokenExtractor
+  tokenExtractor,
+  morgan
 };

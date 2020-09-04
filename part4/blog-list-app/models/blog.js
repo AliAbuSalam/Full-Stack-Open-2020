@@ -5,6 +5,7 @@ let url = process.env.MONGODB_URI;
 
 if(process.env.NODE_ENV === 'test'){
   url = process.env.TEST_MONGODB_URI;
+  console.log('Server running in test mode');
 }
 mongoose.connect(url, { useNewUrlParser: true, useUnifiedTopology: true, useFindAndModify: false })
   .catch(error => {
