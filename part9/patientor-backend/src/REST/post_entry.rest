@@ -1,0 +1,16 @@
+post http://localhost:3001/api/patients/d2773336-f723-11e9-8f0b-362b9e155611
+Content-Type: application/json
+
+{
+  "date": "2020-12-27",
+  "type": "Hospital",
+  "specialist": "MD House",
+  "diagnosisCodes": [
+    "Z74.3"
+  ],
+  "description": "The patient got COVID-19",
+  "discharge": {
+    "date": "2021-01-27",
+    "criteria": "Date might change based on patient condition."
+  }
+}
