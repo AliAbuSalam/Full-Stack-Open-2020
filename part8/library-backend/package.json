@@ -1,0 +1,20 @@
+{
+  "name": "library-backend",
+  "version": "1.0.0",
+  "description": "exercise for part 8 of full stack open 2020",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Ali Abu Salam",
+  "license": "ISC",
+  "dependencies": {
+    "apollo-server": "^2.18.2",
+    "dotenv": "^8.2.0",
+    "graphql": "^15.3.0",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.10.9",
+    "mongoose-unique-validator": "^2.0.3"
+  }
+}
